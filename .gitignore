@@ -1,24 +1,41 @@
-# Dependencies
+############################################
+# Node / npm
+############################################
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
 
-# Build output (Tailwind / bundlers)
-dist/
-build/
-.cache/
+############################################
+# Tailwind build output (OPTIONAL)
+############################################
+output.css
+output.min.css
+*.css.map
 
-# Environment variables
+# ⬆️ If you want to COMMIT output.css, comment the line above
+
+############################################
+# Environment files
+############################################
 .env
 .env.*
 
+############################################
 # Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+############################################
+*.log
 
-# OS files
+############################################
+# OS junk
+############################################
 .DS_Store
 Thumbs.db
 
-# Editor settings
+############################################
+# Editor / IDE
+############################################
 .vscode/
 .idea/
+*.swp
+*.swo
