@@ -74,10 +74,35 @@ let add = (x, y) => x + y;
 console.log(add(5, 6));
 
 // nested function
-function greet(firstName){
+/*function greet(firstName){
     function sayHello() {
     alert('hello ' + firstName);
     }
     return sayHello();
 }
-greet('Naem');
+greet('Naem'); */
+
+// JS object
+const mobileModel = {
+// key: value
+brand: 'realme',
+model: 'c67',
+processor: 'snapdragon',
+camera: ['100MP', '10MP', '20MP',],
+hasFlash: true,
+};
+
+console.log(mobileModel.brand);
+console.log(mobileModel['brand']);
+console.log(mobileModel.hasOwnProperty('camera'));
+console.log(mobileModel.hasOwnProperty('memory'));
+console.log(Object.keys(mobileModel));
+console.log(Object.values(mobileModel));
+
+// JavaScript Arrays
+const language = ['HTML', 'CSS', 'Js', true, 500];
+const language2 = new Array('HTML', 'CSS', 'Js', true, 500);
+console.log(language[2]);
+language[2] = 'PHP';
+console.log(language);
+console.log(language.toString());
