@@ -6,7 +6,8 @@
 <title>mydevtest</title>
 <link rel="stylesheet" href="./output.css">
 </head>
-<body>
+<body class="max-w-7xl mx-auto px-4 bg-gray-100" onload="onLoad()">
+  <h1 id="body-text"></h1>
     <h1 id= "title"></h1>
     <p class="text-3xl underline">Comming Soon</p>
     <p class="bg-yellow-500">this is done on mac</p>
@@ -30,9 +31,76 @@
 <div class="bg-red-500 text-white p-6 text-2xl">
   Tailwind Debug Test
 </div>
-<button id ="btn" class="bg-blue-500 mt-5 block rounded-[10px]">
+<button onclick="subscribe()" id ="btn" class="bg-blue-500 hover:bg-yellow-500 mt-5 block rounded-[10px]">
   Susbscribe
 </button>
+
+<form action="" id ="form">
+<label for="">Name</label>
+<input type="text" placeholder="Enter Your Name">
+<label for="">Email</label>
+<input type="text" placeholder="Enter Your Email">
+<label for="">Phone</label>
+<input type="text" placeholder="Enter Your Phone">
+<label for="">City</label>
+<input type="text" placeholder="Enter Your City">
+</form>
+
+<h2 id="text"></h2>
+
+<div class="max-w-md mx-auto mt-10 p-6 bg-white rounded-xl shadow-md">
+  <h2 class="text-2xl font-semibold mb-6 text-gray-800">
+    Contact Us
+  </h2>
+
+  <form id="form2" class="space-y-4" onkeypress="keyPress();">
+    <!-- Name -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">
+        Name
+      </label>
+      <input
+        type="text"
+        placeholder="Your name"
+        class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+    </div>
+
+    <!-- Email -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">
+        Email
+      </label>
+      <input
+        type="email"
+        placeholder="you@example.com"
+        class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+    </div>
+
+    <!-- Message -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">
+        Message
+      </label>
+      <textarea
+        rows="4"
+        placeholder="Write your message..."
+        class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      ></textarea>
+    </div>
+
+    <!-- Submit -->
+    <button
+      type="submit"
+      class="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 rounded-lg transition"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+ <button id="hel">Hello</button></br>
+<button id="win">Winter</button>
 </body>
 
 

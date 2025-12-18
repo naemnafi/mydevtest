@@ -102,7 +102,33 @@ console.log(Object.values(mobileModel));
 // JavaScript Arrays
 const language = ['HTML', 'CSS', 'Js', true, 500];
 const language2 = new Array('HTML', 'CSS', 'Js', true, 500);
-console.log(language[2]);
-language[2] = 'PHP';
+console.log(language[2]); //to see a specific array
+language[2] = 'PHP'; // to change a array value
 console.log(language);
-console.log(language.toString());
+console.log(language.toString()); //to see as string
+language[5] =  'vue.js';// you can increase array
+console.log(language);
+console.log(language.length); //to see total number of array
+
+
+// JS Events
+document.getElementById('win').addEventListener('click', function () {
+document.getElementById('win').innerHTML = 'Hey Winter, I feel cold';
+});// the best and modern way
+
+document.getElementById('hel').onclick = function () {
+    document.getElementById('hel').innerHTML = 'hello sir';
+}; //another way to set event, and it is easier
+
+function subscribe(){
+    document.getElementById('btn').innerHTML = 'subscribed'; // to change text when event happen
+};
+function subscribe(){
+    document.getElementById('btn').style.backgroundColor = '#00ff00'; // to change style when event happens
+};
+function keyPress(){
+    document.getElementById('text').innerHTML = 'Key Pressed 👍'; // to see event when press on key
+}
+function onLoad(){
+    document.getElementById('body-text').innerHTML = 'Website Loaded👍'; // to see event when web load
+}
