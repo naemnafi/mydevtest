@@ -200,4 +200,13 @@ switch (category) {
 console.log(carType);
 
 // JS Loop
-let countries = ['BD', 'India', 'usa', 'uk'];
+/* let countries = ['BD', 'India', 'usa', 'uk'];
+for (let i = 0; i < 4; i++) {           //specific number
+    console.log(countries[i]); 
+}; 
+*/
+
+let countries = ['BD', 'India', 'usa', 'uk', 'uae'];
+for (let i = 0; i < countries.length; i++) {            //dynamic selection
+    console.log(countries[i]);
+};
