@@ -132,3 +132,72 @@ function keyPress(){
 function onLoad(){
     document.getElementById('body-text').innerHTML = 'Website Loaded👍'; // to see event when web load
 }
+
+
+
+// JS Math
+console.log(Math.pow(4, 2)); //square value
+console.log(Math.pow(4, 3)); //qube value
+console.log(Math.sqrt(64)); //square-root value
+console.log(Math.min(0, 1, 2, 3, 4, 5)); //min value
+console.log(Math.max(0, 1, 2, 3, 4, 5)); //max value
+console.log(Math.PI); //pie value
+console.log(Math.floor(Math.random().toFixed(2) * 10 + 1 )); //random round figure value
+
+// Ludo
+let upperValue = 6;
+let lowerValue = 1;
+let resultValue = Math.ceil (Math.random() * upperValue);
+console.log(resultValue);
+
+// JS string
+let Name = 'Naem';
+let country = 'BD';
+console.log('I am ' + Name + ', from ' + country);
+// another way to take string
+let Name2 = 'Naem';
+let country2 = 'BD';
+let info = `I am ${Name2}
+, I am from ${country2}.`
+console.log(info);
+
+
+//JS Date
+const myDate = new Date();
+console.log(myDate);
+console.log(myDate.toLocaleString());
+
+// JS Memory
+
+// JS Conditional Statements
+let age = 19;
+if (age > 18) {
+    console.log('you are adult');
+} else {
+    console.log('You are child');
+};
+
+let grade  = 70;
+if (grade > 80) {
+    console.log('A+');
+} else if (grade < 80) {
+    console.log('B');
+};
+
+// another way - switch, Best for many statement
+let category = 'car';
+let carType;
+switch (category) {
+    case 'car': 
+    carType = 'This is a car';
+    break;
+    case 'Motor Bike':
+        carType = 'This is a Motor Bike';
+        break;
+        default:
+            carType = 'unknown';
+};
+console.log(carType);
+
+// JS Loop
+let countries = ['BD', 'India', 'usa', 'uk'];
