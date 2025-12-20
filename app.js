@@ -210,3 +210,36 @@ let countries = ['BD', 'India', 'usa', 'uk', 'uae'];
 for (let i = 0; i < countries.length; i++) {            //dynamic selection
     console.log(countries[i]);
 };
+
+//
+const student = {
+    firstName: 'Naem',
+    sInfo: function() {     //method
+        return `${this.firstName} loves to code`;
+    },
+};
+console.log(student.sInfo());
+
+//memorization
+function square(num){
+    return num * num;
+}
+//console.log(square(4));
+console.log(square(888888888));
+
+
+//DOM
+document.querySelector('h5').innerText = 'Susbcribe';
+document.querySelector('h5').style.backgroundColor = 'green';
+document.getElementById('sat').innerHTML = 'Sunday';
+
+//API, DOM projector, Random quote generator
+const randomQuote = [
+  "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+  "Code is like humor. When you have to explain it, it’s bad.",
+  "Dream big. Start small. Act now.",
+  "The best way to predict the future is to create it.",
+  "Don’t watch the clock; do what it does. Keep going."
+];
+
+console.log(randomQuote);
